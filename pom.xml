@@ -107,19 +107,6 @@
 			<artifactId>okio</artifactId>
 			<version>3.3.0</version>
 		</dependency>
-		<!-- Feign -->
-		<!--		<dependency>
-			<groupId>io.github.openfeign</groupId>
-		<artifactId>feign-core</artifactId>
-		</dependency>
-		<dependency>
-		<groupId>io.github.openfeign</groupId>
-		<artifactId>feign-jackson</artifactId>
-		</dependency>-->
-		<dependency>
-			<groupId>io.github.openfeign</groupId>
-			<artifactId>feign-httpclient</artifactId>
-		</dependency>
 		<!-- Apache Commons -->
 		<dependency>
 			<groupId>commons-configuration</groupId>
@@ -166,6 +153,6 @@
 	</dependencyManagement>
 	<modules>
 		<module>../certify-commons</module>
-		<module>../certify-authentication</module>
+		<!--<module>../certify-authentication</module>-->
 	</modules>
 </project>
