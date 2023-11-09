@@ -139,6 +139,19 @@
 			<version>9.31</version>
 		</dependency>
 
+		<!-- Libreria per la gestione della serializzazione in bson di Jackson -->
+		<dependency>
+			<groupId>de.undercouch</groupId>
+			<artifactId>bson4jackson</artifactId>
+			<version>2.15.0</version>
+		</dependency>
+		
+		<!-- Libreria per l'invio della email -->
+		<dependency>
+		   <groupId>com.sun.mail</groupId>
+		   <artifactId>jakarta.mail</artifactId>
+		   <version>2.0.1</version>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
