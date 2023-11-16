@@ -131,12 +131,7 @@
 		<dependency>
 			<groupId>org.bitbucket.b_c</groupId>
 			<artifactId>jose4j</artifactId>
-			<version>0.6.3</version>
-		</dependency>
-		<dependency>
-			<groupId>com.nimbusds</groupId>
-			<artifactId>nimbus-jose-jwt</artifactId>
-			<version>9.31</version>
+			<version>0.9.3</version>
 		</dependency>
 
 		<!-- Libreria per la gestione della serializzazione in bson di Jackson -->
