@@ -161,6 +161,8 @@
 	</dependencyManagement>
 	<modules>
 		<module>../certify-commons</module>
-		<!--<module>../certify-authentication</module>-->
+		<module>../certify-authentication</module>
+		<module>../certify-profiles</module>
+		<module>../certify-organizations</module>
 	</modules>
 </project>
