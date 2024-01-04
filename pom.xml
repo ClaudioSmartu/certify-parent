@@ -162,7 +162,11 @@
 	<modules>
 		<module>../certify-commons</module>
 		<module>../certify-authentication</module>
+		<module>../certify-lovs</module>
 		<module>../certify-profiles</module>
+		<module>../certify-profiles-operators</module>
 		<module>../certify-organizations</module>
+		<module>../certify-certifications</module>
+		<module>../certify-backoffice-certifications</module>
 	</modules>
 </project>
