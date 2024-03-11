@@ -168,5 +168,6 @@
 		<module>../certify-organizations</module>
 		<module>../certify-certifications</module>
 		<module>../certify-backoffice-certifications</module>
+		<module>../certify-tokens</module>
 	</modules>
 </project>
