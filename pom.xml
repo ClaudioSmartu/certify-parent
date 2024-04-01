@@ -56,7 +56,7 @@
 		<dependency>
 			<groupId>org.web3j</groupId>
 			<artifactId>core</artifactId>
-			<version>4.8.7</version>
+			<version>4.5.16</version>
 			<!--			<exclusions>
 				<exclusion>
 					<groupId>org.web3j</groupId>
