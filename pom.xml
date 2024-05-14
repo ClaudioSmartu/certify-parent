@@ -57,45 +57,7 @@
 			<groupId>org.web3j</groupId>
 			<artifactId>core</artifactId>
 			<version>4.5.16</version>
-			<!--			<exclusions>
-				<exclusion>
-					<groupId>org.web3j</groupId>
-			<artifactId>crypto</artifactId>
-				</exclusion>
-				<exclusion>
-			<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-api</artifactId>
-			</exclusion>
-			</exclusions>-->
 		</dependency>
-		<!--<dependency>
-			<groupId>org.web3j</groupId>
-			<artifactId>crypto</artifactId>
-			<version>4.8.7</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.web3j</groupId>
-					<artifactId>utils</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.web3j</groupId>
-			<artifactId>utils</artifactId>
-			<version>4.8.7</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.bouncycastle</groupId>
-					<artifactId>bcprov-jdk15on</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>-->
-		<!--		<dependency>
-			<groupId>org.bouncycastle</groupId>
-		<artifactId>bcprov-jdk15on</artifactId>
-			<version>1.60</version>
-		<scope>provided</scope>
-		</dependency>-->
 		<!--  Needed to avoid conflict with OkHttp being used in auth0-java and
 		okhttp3 being used by spring -->
 		<dependency>
@@ -147,6 +109,13 @@
 			<artifactId>angus-mail</artifactId>
 		</dependency>
 
+		<!-- Libreria per l'abilitazione log in json format-->
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+			<version>6.6</version>
+		</dependency>
+		
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
