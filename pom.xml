@@ -50,8 +50,7 @@
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.2.0</version>
 		</dependency>
-		<!-- Web3j gestito il problema del cast su classe di bouncycastle con
-		import modulo wildfly-->
+		<!-- Web3j gestito il problema del cast su classe di bouncycastle con import modulo wildfly-->
 		<dependency>
 			<groupId>org.web3j</groupId>
 			<artifactId>core</artifactId>
