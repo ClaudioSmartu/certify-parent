@@ -127,7 +127,6 @@
 		</dependencies>
 	</dependencyManagement>
 	<modules>
-		<module>../certify-commons</module>
 		<module>../certify-authentication</module>
 		<module>../certify-lovs</module>
 		<module>../certify-profiles</module>
