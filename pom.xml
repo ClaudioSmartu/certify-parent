@@ -9,7 +9,8 @@
 	</parent>
 	<groupId>com.smartu.certify</groupId>
 	<artifactId>certify-parent</artifactId>
-	<version>1.0.0</version>
+	<!-- 1.1.0: parent dei moduli IT-Wallet 3.0 (branch release_itwallet_147), senza web3j; la 2.x resta sulla 1.0.0 -->
+	<version>1.1.0</version>
 	<packaging>pom</packaging>
 	<properties>
 		<java.version>17</java.version>
@@ -49,23 +50,6 @@
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.2.0</version>
-		</dependency>
-		<!-- Web3j gestito il problema del cast su classe di bouncycastle con import modulo wildfly-->
-		<dependency>
-			<groupId>org.web3j</groupId>
-			<artifactId>core</artifactId>
-			<version>4.5.16</version>
-		</dependency>
-		<!--  Needed to avoid conflict with OkHttp being used in auth0-java and
-		okhttp3 being used by spring -->
-		<dependency>
-			<groupId>com.squareup.okhttp3</groupId>
-			<artifactId>okhttp</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.squareup.okio</groupId>
-			<artifactId>okio</artifactId>
-			<version>3.3.0</version>
 		</dependency>
 		<!-- Apache Commons -->
 		<dependency>
@@ -120,6 +104,23 @@
 		    <artifactId>lombok</artifactId>
 		    <scope>provided</scope>
 		</dependency>
+
+		<!-- SD-JWT -->
+		<dependency>
+			<groupId>com.nimbusds</groupId>
+			<artifactId>nimbus-jose-jwt</artifactId>
+			<version>10.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.authlete</groupId>
+			<artifactId>sd-jwt</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.erdtman</groupId>
+			<artifactId>java-json-canonicalization</artifactId>
+			<version>1.1</version>
+		</dependency>
 		
 	</dependencies>
 	<dependencyManagement>
@@ -155,15 +156,4 @@
         </plugins>
     </pluginManagement>
 </build>
-	<modules>
-		<module>../certify-authentication</module>
-		<module>../certify-lovs</module>
-		<module>../certify-profiles</module>
-		<module>../certify-profiles-operators</module>
-		<module>../certify-organizations</module>
-		<module>../certify-certifications</module>
-		<module>../certify-backoffice-certifications</module>
-		<module>../certify-tokens</module>
-		<module>../certify-wallet-provider</module>
-	</modules>
 </project>
